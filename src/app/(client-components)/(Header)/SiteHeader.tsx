@@ -86,7 +86,7 @@ const SiteHeader = () => {
                 key={header}
                 className={`py-1.5 px-3.5 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
                   headerSelected === header
-                    ? "bg-black text-white shadow-black/10 shadow-lg"
+                    ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
                     : "border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500"
                 }`}
                 onClick={() => setHeaderSelected(header)}
@@ -112,7 +112,7 @@ const SiteHeader = () => {
                 href={home.slug}
                 className={`py-1.5 px-3.5 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
                   pathname === home.slug
-                    ? "bg-black text-white shadow-black/10 shadow-lg"
+                    ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
                     : "border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500"
                 }`}
               >

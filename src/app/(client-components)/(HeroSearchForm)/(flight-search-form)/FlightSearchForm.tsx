@@ -183,8 +183,8 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-3 ${
             dropOffLocationType === "roundTrip"
-              ? "bg-black shadow-black/10 shadow-lg text-white"
-              : "border border-neutral-300 dark:border-neutral-700"
+              ? "bg-secondary-400 shadow-black/10 shadow-lg text-white"
+              : "border border-secondary-300 dark:border-secondary-700"
           }`}
           onClick={(e) => setDropOffLocationType("roundTrip")}
         >
@@ -193,8 +193,8 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer mr-2 my-1 sm:mr-3 ${
             dropOffLocationType === "oneWay"
-              ? "bg-black text-white shadow-black/10 shadow-lg"
-              : "border border-neutral-300 dark:border-neutral-700"
+              ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
+              : "border border-secondary-300 dark:border-secondary-700"
           }`}
           onClick={(e) => setDropOffLocationType("oneWay")}
         >
@@ -203,10 +203,10 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
 
         <div className="self-center border-r border-slate-200 dark:border-slate-700 h-8 mr-2 my-1 sm:mr-3"></div>
 
-        <div className="mr-2 my-1 sm:mr-3 border border-neutral-300 dark:border-neutral-700 rounded-full">
+        <div className="mr-2 my-1 sm:mr-3 border border-secondary-300 dark:border-secondary-700 rounded-full">
           {renderSelectClass()}
         </div>
-        <div className="my-1 border border-neutral-300 dark:border-neutral-700 rounded-full">
+        <div className="my-1 border border-secondary-300 dark:border-secondary-700 rounded-full">
           {renderGuest()}
         </div>
       </div>

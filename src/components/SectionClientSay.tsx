@@ -174,7 +174,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
                 {data.map((item, i) => (
                   <button
                     className={`w-2 h-2 rounded-full ${
-                      i === index ? "bg-black/70" : "bg-black/10 "
+                      i === index ? "bg-secondary-400/70" : "bg-secondary-400/10 "
                     }`}
                     onClick={() => changeItemId(i)}
                     key={i}

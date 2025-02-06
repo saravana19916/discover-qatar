@@ -376,7 +376,7 @@ const TabFilters = () => {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
+                <Dialog.Overlay className="fixed inset-0 bg-secondary-400 bg-opacity-40 dark:bg-opacity-60" />
               </Transition.Child>
 
               {/* This element is to trick the browser into centering the modal contents. */}

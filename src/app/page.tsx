@@ -166,7 +166,7 @@ function PageHome() {
         <SectionHowItWork />
 
         <div className="relative py-16">
-          <BackgroundSection className="bg-orange-50 dark:bg-black/20" />
+          <BackgroundSection className="bg-orange-50 dark:bg-secondary-400/20" />
           <SectionSliderNewCategories
             categories={DEMO_CATS_2}
             categoryCardType="card4"
@@ -180,7 +180,7 @@ function PageHome() {
         <SectionSubscribe2 />
 
         <div className="relative py-16">
-          <BackgroundSection className="bg-orange-50 dark:bg-black dark:bg-opacity-20 " />
+          <BackgroundSection className="bg-orange-50 dark:bg-secondary-400 dark:bg-opacity-20 " />
           <SectionGridAuthorBox />
         </div>
 

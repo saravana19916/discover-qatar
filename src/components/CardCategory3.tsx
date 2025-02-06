@@ -26,7 +26,7 @@ const CardCategory3: FC<CardCategory3Props> = ({
           fill
           sizes="(max-width: 400px) 100vw, 300px"
         />
-        <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-black bg-opacity-10 transition-opacity"></span>
+        <span className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-secondary-400 bg-opacity-10 transition-opacity"></span>
       </div>
       <div className="mt-4 truncate">
         <h2

@@ -89,7 +89,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
       <div className="mb-8 lg:mb-11">
         <TabFilters />
       </div>
-      <div className="lg:p-10 lg:bg-neutral-50 lg:dark:bg-black/20 grid grid-cols-1 gap-6  rounded-3xl">
+      <div className="lg:p-10 lg:bg-neutral-50 lg:dark:bg-secondary-400/20 grid grid-cols-1 gap-6  rounded-3xl">
         {DEMO_DATA.map((item, index) => (
           <FlightCard key={index} data={item} />
         ))}

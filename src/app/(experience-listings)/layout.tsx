@@ -45,7 +45,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
         {/* SECTION */}
         <div className="relative py-16 mb-24 lg:mb-28">
-          <BackgroundSection className="bg-orange-50 dark:bg-black dark:bg-opacity-20 " />
+          <BackgroundSection className="bg-orange-50 dark:bg-secondary-400 dark:bg-opacity-20 " />
           <SectionGridAuthorBox />
         </div>
       </div>

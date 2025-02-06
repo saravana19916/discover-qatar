@@ -175,7 +175,7 @@ function PageHome2() {
         />
 
         <div className="relative py-16">
-          <BackgroundSection className="bg-neutral-100 dark:bg-black dark:bg-opacity-20 " />
+          <BackgroundSection className="bg-neutral-100 dark:bg-secondary-400 dark:bg-opacity-20 " />
           <SectionGridAuthorBox boxCard="box2" />
         </div>
 

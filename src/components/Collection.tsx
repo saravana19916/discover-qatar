@@ -32,7 +32,7 @@ const Collection: FC<CollectionProps> = ({
             sizes="300px"
           />
         </div>
-        <span className="opacity-0 group-hover:opacity-40 absolute inset-0 bg-black/10 transition-opacity"></span>
+        <span className="opacity-0 group-hover:opacity-40 absolute inset-0 bg-secondary-400/10 transition-opacity"></span>
 
         <div>
           <div className="absolute inset-5 flex flex-col">

@@ -126,7 +126,7 @@ const CarsSearchForm = () => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer ${
             dropOffLocationType === "same"
-              ? "bg-black text-white shadow-black/10 shadow-lg"
+              ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
               : "border border-neutral-300 dark:border-neutral-700"
           }`}
           onClick={(e) => setDropOffLocationType("same")}
@@ -136,7 +136,7 @@ const CarsSearchForm = () => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer ${
             dropOffLocationType === "different"
-              ? "bg-black text-white shadow-black/10 shadow-lg"
+              ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
               : "border border-neutral-300 dark:border-neutral-700"
           }`}
           onClick={(e) => setDropOffLocationType("different")}

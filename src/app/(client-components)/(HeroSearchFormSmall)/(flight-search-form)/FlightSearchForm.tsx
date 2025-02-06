@@ -184,7 +184,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
             dropOffLocationType === "roundTrip"
-              ? "bg-black shadow-black/10 shadow-lg text-white"
+              ? "bg-secondary-400 shadow-black/10 shadow-lg text-white"
               : "border border-neutral-300 dark:border-neutral-700"
           }`}
           onClick={(e) => setDropOffLocationType("roundTrip")}
@@ -194,7 +194,7 @@ const FlightSearchForm: FC<FlightSearchFormProps> = ({}) => {
         <div
           className={`py-1.5 px-4 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
             dropOffLocationType === "oneWay"
-              ? "bg-black text-white shadow-black/10 shadow-lg"
+              ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
               : "border border-neutral-300 dark:border-neutral-700"
           }`}
           onClick={(e) => setDropOffLocationType("oneWay")}

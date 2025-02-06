@@ -10,7 +10,7 @@ export interface BtnLikeIconProps {
 
 const BtnLikeIcon: FC<BtnLikeIconProps> = ({
   className = "",
-  colorClass = "text-white bg-black bg-opacity-30 hover:bg-opacity-50",
+  colorClass = "text-white bg-secondary-400 bg-opacity-30 hover:bg-opacity-50",
   isLiked = false,
 }) => {
   const [likedState, setLikedState] = useState(isLiked);
