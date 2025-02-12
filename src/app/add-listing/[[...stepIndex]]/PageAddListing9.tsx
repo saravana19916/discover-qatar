@@ -43,13 +43,13 @@ const PageAddListing9: FC<PageAddListing9Props> = () => {
 
       <div className="addListingDatePickerExclude">
         <DatePicker
-          onChange={(date) => {
+          onChange={(date: any) => {
             let newDates = [];
 
             if (!date) {
               return;
             }
-            const newTime = date.getTime();
+            const newTime = date?.getTime();
             if (dates.includes(newTime)) {
               newDates = dates.filter((item) => item !== newTime);
             } else {

@@ -123,7 +123,7 @@ const FlightDateRangeInput: FC<FlightDateRangeInputProps> = ({
                   ) : (
                     <DatePicker
                       selected={startDate}
-                      onChange={(date) => setStartDate(date)}
+                      onChange={(date: any) => setStartDate(date)}
                       monthsShown={2}
                       showPopperArrow={false}
                       inline

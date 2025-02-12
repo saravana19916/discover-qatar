@@ -60,7 +60,7 @@ const PageAddListing2: FC<PageAddListing2Props> = () => {
           <div className="mt-4">
             <div className="aspect-w-5 aspect-h-5 sm:aspect-h-3">
               <div className="rounded-xl overflow-hidden">
-                <GoogleMapReact
+                {/* <GoogleMapReact
                   bootstrapURLKeys={{
                     key: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
                   }}
@@ -72,7 +72,7 @@ const PageAddListing2: FC<PageAddListing2Props> = () => {
                   }}
                 >
                   <LocationMarker lat={55.9607277} lng={36.2172614} />
-                </GoogleMapReact>
+                </GoogleMapReact> */}
               </div>
             </div>
           </div>

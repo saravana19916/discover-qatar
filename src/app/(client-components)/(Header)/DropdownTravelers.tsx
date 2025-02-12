@@ -16,15 +16,15 @@ interface SolutionItem {
 
 const solutions: SolutionItem[] = [
   {
-    name: "Stays",
-    description: "Stays rental description ",
+    name: "Hotels",
+    description: "Hotel rental description ",
     href: "/listing-stay",
     active: true,
     icon: IconOne,
   },
   {
-    name: "Real Estate",
-    description: "Real Estate description",
+    name: "Accomandation",
+    description: "Accomandation description",
     href: "/listing-real-estate",
     icon: IconTwo,
   },
@@ -35,10 +35,16 @@ const solutions: SolutionItem[] = [
     icon: IconThree,
   },
   {
-    name: "Experiences",
-    description: "Tour and experiences",
+    name: "Events & Experiences",
+    description: "Events and experiences",
     href: "/listing-experiences",
     icon: IconFour,
+  },
+  {
+    name : "Flights" ,
+    description: "Filght description",
+    href:"/",
+    icon: IconOne,
   },
 ];
 

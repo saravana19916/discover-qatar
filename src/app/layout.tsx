@@ -14,6 +14,15 @@ const poppins = Poppins({
   display: "swap",
   weight: ["300", "400", "500", "600", "700"],
 });
+export const metadata = {
+  title: "Discover Qatar",
+  description: "Your travel companion for Qatar",
+  icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -25,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className}>
       <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" sizes="any" />
       </Head>
 
       <body className="bg-white text-base dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200">
