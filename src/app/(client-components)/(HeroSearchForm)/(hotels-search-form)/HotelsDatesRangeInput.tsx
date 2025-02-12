@@ -2,19 +2,20 @@
 
 import React, { Fragment, useState, FC } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { CalendarIcon } from "@heroicons/react/24/outline";
 import DatePickerCustomHeaderTwoMonth from "@/components/DatePickerCustomHeaderTwoMonth";
 import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import DatePicker from "react-datepicker";
 import ClearDataButton from "../ClearDataButton";
 
-export interface StayDatesRangeInputProps {
+export interface HotelsDatesRangeInputProps {
   className?: string;
   fieldClassName?: string;
 }
 
-const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
+const HotelsDatesRangeInput: FC<HotelsDatesRangeInputProps> = ({
   className = "[ lg:nc-flex-2 ]",
-  fieldClassName = "[ nc-hero-field-padding--small ]",
+  fieldClassName = "[ nc-hero-field-padding ]",
 }) => {
   const [startDate, setStartDate] = useState<Date | null>(
     new Date("2023/02/06")
@@ -31,8 +32,11 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
   const renderInput = () => {
     return (
       <>
+        <div className="text-neutral-300 dark:text-neutral-400">
+          <CalendarIcon className="w-5 h-5 lg:w-7 lg:h-7" />
+        </div>
         <div className="flex-grow text-left">
-          <span className="block xl:text-base font-semibold">
+          <span className="block xl:text-lg font-semibold">
             {startDate?.toLocaleDateString("en-US", {
               month: "short",
               day: "2-digit",
@@ -59,7 +63,7 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
         <>
           <Popover.Button
             className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none ${
-              open ? "nc-hero-field-focused--2" : ""
+              open ? "nc-hero-field-focused" : ""
             }`}
           >
             {renderInput()}
@@ -108,4 +112,4 @@ const StayDatesRangeInput: FC<StayDatesRangeInputProps> = ({
   );
 };
 
-export default StayDatesRangeInput;
+export default HotelsDatesRangeInput;

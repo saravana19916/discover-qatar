@@ -3,11 +3,11 @@
 import React, { FC } from "react";
 import LocationInput from "../LocationInput";
 import GuestsInput from "../GuestsInput";
-import ExperiencesDateSingleInput from "./ExperiencesDateSingleInput";
+import ExperiencesDateSingleInput from "./AccommodationDateSingleInput";
 
-export interface ExperiencesSearchFormProps {}
+export interface AccommodationSearchFormProps {}
 
-const ExperiencesSearchForm: FC<ExperiencesSearchFormProps> = ({}) => {
+const AccommodationSearchForm: FC<AccommodationSearchFormProps> = ({}) => {
   const renderForm = () => {
     return (
       <form className="w-full relative flex flex-row rounded-full border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
@@ -26,4 +26,4 @@ const ExperiencesSearchForm: FC<ExperiencesSearchFormProps> = ({}) => {
   return renderForm();
 };
 
-export default ExperiencesSearchForm;
+export default AccommodationSearchForm;

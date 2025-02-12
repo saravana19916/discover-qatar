@@ -1,22 +1,23 @@
 "use client";
 
-import React, { Fragment, useState } from "react";
-import { FC } from "react";
+import React, { Fragment, useState, FC } from "react";
 import DatePicker from "react-datepicker";
 import { Popover, Transition } from "@headlessui/react";
-import { CalendarIcon } from "@heroicons/react/24/outline";
 import DatePickerCustomHeaderTwoMonth from "@/components/DatePickerCustomHeaderTwoMonth";
 import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import ClearDataButton from "../ClearDataButton";
+import ButtonSubmit from "../ButtonSubmit";
 
-export interface ExperiencesDateSingleInputProps {
+export interface TransportationDatesRangeInputProps {
   className?: string;
   fieldClassName?: string;
+  hasButtonSubmit?: boolean;
 }
 
-const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
+const TransportationDatesRangeInput: FC<TransportationDatesRangeInputProps> = ({
   className = "",
-  fieldClassName = "[ nc-hero-field-padding ]",
+  fieldClassName = "[ nc-hero-field-padding--small ]",
+  hasButtonSubmit = true,
 }) => {
   const [startDate, setStartDate] = useState<Date | null>(
     new Date("2023/03/01")
@@ -32,15 +33,12 @@ const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
   const renderInput = () => {
     return (
       <>
-        <div className="text-neutral-300 dark:text-neutral-400">
-          <CalendarIcon className="w-5 h-5 lg:w-7 lg:h-7" />
-        </div>
         <div className="flex-grow text-left">
-          <span className="block xl:text-lg font-semibold">
+          <span className="block xl:text-base font-semibold">
             {startDate?.toLocaleDateString("en-US", {
               month: "short",
               day: "2-digit",
-            }) || "Date"}
+            }) || "Add dates"}
             {endDate
               ? " - " +
                 endDate?.toLocaleDateString("en-US", {
@@ -50,7 +48,7 @@ const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
               : ""}
           </span>
           <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-            {startDate ? "Date" : `Add dates`}
+            {"Pick up - Drop off"}
           </span>
         </div>
       </>
@@ -60,20 +58,32 @@ const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
   return (
     <>
       <Popover
-        className={`ExperiencesDateSingleInput relative flex ${className}`}
+        className={`TransportationDatesRangeInput relative flex ${className}`}
       >
         {({ open }) => (
           <>
-            <Popover.Button
-              className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none ${
-                open ? "nc-hero-field-focused" : ""
+            <div
+              className={`flex-1 z-10 flex items-center focus:outline-none ${
+                open ? "nc-hero-field-focused--2" : ""
               }`}
             >
-              {renderInput()}
-              {startDate && open && (
-                <ClearDataButton onClick={() => onChangeDate([null, null])} />
+              <Popover.Button
+                className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none `}
+              >
+                {renderInput()}
+
+                {startDate && open && (
+                  <ClearDataButton onClick={() => onChangeDate([null, null])} />
+                )}
+              </Popover.Button>
+
+              {/* BUTTON SUBMIT OF FORM */}
+              {hasButtonSubmit && (
+                <div className="pr-2 xl:pr-4">
+                  <ButtonSubmit href="/listing-car-detail" />
+                </div>
               )}
-            </Popover.Button>
+            </div>
 
             {open && (
               <div className="h-8 absolute self-center top-1/2 -translate-y-1/2 z-0 -inset-x-0.5 bg-white dark:bg-neutral-800"></div>
@@ -116,4 +126,4 @@ const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
   );
 };
 
-export default ExperiencesDateSingleInput;
+export default TransportationDatesRangeInput;

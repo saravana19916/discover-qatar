@@ -1,23 +1,22 @@
 "use client";
 
-import React, { Fragment, useState, FC } from "react";
+import React, { Fragment, useState } from "react";
+import { FC } from "react";
 import DatePicker from "react-datepicker";
 import { Popover, Transition } from "@headlessui/react";
+import { CalendarIcon } from "@heroicons/react/24/outline";
 import DatePickerCustomHeaderTwoMonth from "@/components/DatePickerCustomHeaderTwoMonth";
 import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import ClearDataButton from "../ClearDataButton";
-import ButtonSubmit from "../ButtonSubmit";
 
-export interface RentalCarDatesRangeInputProps {
+export interface AccommodationDateSingleInputProps {
   className?: string;
   fieldClassName?: string;
-  hasButtonSubmit?: boolean;
 }
 
-const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
+const AccommodationDateSingleInput: FC<AccommodationDateSingleInputProps> = ({
   className = "",
-  fieldClassName = "[ nc-hero-field-padding--small ]",
-  hasButtonSubmit = true,
+  fieldClassName = "[ nc-hero-field-padding ]",
 }) => {
   const [startDate, setStartDate] = useState<Date | null>(
     new Date("2023/03/01")
@@ -33,12 +32,15 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   const renderInput = () => {
     return (
       <>
+        <div className="text-neutral-300 dark:text-neutral-400">
+          <CalendarIcon className="w-5 h-5 lg:w-7 lg:h-7" />
+        </div>
         <div className="flex-grow text-left">
-          <span className="block xl:text-base font-semibold">
+          <span className="block xl:text-lg font-semibold">
             {startDate?.toLocaleDateString("en-US", {
               month: "short",
               day: "2-digit",
-            }) || "Add dates"}
+            }) || "Date"}
             {endDate
               ? " - " +
                 endDate?.toLocaleDateString("en-US", {
@@ -48,7 +50,7 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
               : ""}
           </span>
           <span className="block mt-1 text-sm text-neutral-400 leading-none font-light">
-            {"Pick up - Drop off"}
+            {startDate ? "Date" : `Add dates`}
           </span>
         </div>
       </>
@@ -58,32 +60,20 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   return (
     <>
       <Popover
-        className={`RentalCarDatesRangeInput relative flex ${className}`}
+        className={`ExperiencesDateSingleInput relative flex ${className}`}
       >
         {({ open }) => (
           <>
-            <div
-              className={`flex-1 z-10 flex items-center focus:outline-none ${
-                open ? "nc-hero-field-focused--2" : ""
+            <Popover.Button
+              className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none ${
+                open ? "nc-hero-field-focused" : ""
               }`}
             >
-              <Popover.Button
-                className={`flex-1 z-10 flex relative ${fieldClassName} items-center space-x-3 focus:outline-none `}
-              >
-                {renderInput()}
-
-                {startDate && open && (
-                  <ClearDataButton onClick={() => onChangeDate([null, null])} />
-                )}
-              </Popover.Button>
-
-              {/* BUTTON SUBMIT OF FORM */}
-              {hasButtonSubmit && (
-                <div className="pr-2 xl:pr-4">
-                  <ButtonSubmit href="/listing-car-detail" />
-                </div>
+              {renderInput()}
+              {startDate && open && (
+                <ClearDataButton onClick={() => onChangeDate([null, null])} />
               )}
-            </div>
+            </Popover.Button>
 
             {open && (
               <div className="h-8 absolute self-center top-1/2 -translate-y-1/2 z-0 -inset-x-0.5 bg-white dark:bg-neutral-800"></div>
@@ -126,4 +116,4 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   );
 };
 
-export default RentalCarDatesRangeInput;
+export default AccommodationDateSingleInput;

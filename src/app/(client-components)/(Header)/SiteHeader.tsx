@@ -40,7 +40,7 @@ const SiteHeader = () => {
 
   let [homePages] = useState<HomePageItem[]>([
     { name: "Home Main", slug: "/" },
-    { name: "Real Estate", slug: "/home-2" },
+    { name: "Accommodation", slug: "/home-2" },
     { name: "Home 3", slug: "/home-3" },
   ]);
   const [headerSelected, setHeaderSelected] = useState<SiteHeaders>("Header 2");
@@ -86,7 +86,7 @@ const SiteHeader = () => {
                 key={header}
                 className={`py-1.5 px-3.5 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
                   headerSelected === header
-                    ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
+                    ? "bg-primary-6000 text-white hover:bg-primary-700 shadow-black/10 shadow-lg"
                     : "border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500"
                 }`}
                 onClick={() => setHeaderSelected(header)}
@@ -112,7 +112,7 @@ const SiteHeader = () => {
                 href={home.slug}
                 className={`py-1.5 px-3.5 flex items-center rounded-full font-medium text-xs cursor-pointer select-none ${
                   pathname === home.slug
-                    ? "bg-secondary-400 text-white shadow-black/10 shadow-lg"
+                    ? "bg-primary-6000 text-white hover:bg-primary-700 shadow-black/10 shadow-lg"
                     : "border border-neutral-300 dark:border-neutral-700 hover:border-neutral-400 dark:hover:border-neutral-500"
                 }`}
               >
@@ -161,9 +161,8 @@ const SiteHeader = () => {
                         <a
                           className="flex items-center justify-center w-full px-4 py-2 !rounded-xl text-sm font-medium bg-primary-6000 text-white hover:bg-primary-700"
                           href={
-                            "https://themeforest.net/item/chisfis-online-booking-nextjs-template/43399526"
+                            "/"
                           }
-                          target="_blank"
                           rel="noopener noreferrer"
                         >
                           <ShoppingCartIcon className="w-4 h-4" />

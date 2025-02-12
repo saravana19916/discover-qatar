@@ -29,12 +29,12 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
   const [showHeroSearch, setShowHeroSearch] =
     useState<StaySearchFormFields | null>();
   //
-  const [currentTab, setCurrentTab] = useState<SearchTab>("Stays");
+  const [currentTab, setCurrentTab] = useState<SearchTab>("Hotels");
 
   //
   useOutsideAlerter(headerInnerRef, () => {
     setShowHeroSearch(null);
-    setCurrentTab("Stays");
+    setCurrentTab("Hotels");
   });
 
   let pathname = usePathname();
@@ -155,7 +155,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
           ${showHeroSearch ? "duration-75" : ""} 
           ${
             showHeroSearch
-              ? currentTab === "Cars" || currentTab === "Flights"
+              ? currentTab === "Transportation"
                 ? "scale-y-[4.4]"
                 : "scale-y-[3.4]"
               : ""

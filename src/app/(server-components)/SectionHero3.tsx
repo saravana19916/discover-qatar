@@ -18,7 +18,7 @@ const SectionHero3: FC<SectionHero3Props> = ({ className = "" }) => {
           Booking tax-free from Chis. platform
         </span>
         <h2 className="font-bold text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl !leading-[115%] ">
-          New generation <br /> of booking
+        Events,Accommodation & Experiences
         </h2>
         <ButtonPrimary
           sizeClass="px-6 py-3 lg:px-8 lg:py-4 rounded-xl"

@@ -23,14 +23,14 @@ const solutions: SolutionItem[] = [
     icon: IconOne,
   },
   {
-    name: "Accomandation",
-    description: "Accomandation description",
+    name: "Accommodation",
+    description: "Accommodation",
     href: "/listing-real-estate",
     icon: IconTwo,
   },
   {
-    name: "Cars",
-    description: "Car rental description",
+    name: "Transportation",
+    description: "Transportation",
     href: "/listing-car",
     icon: IconThree,
   },
@@ -39,12 +39,6 @@ const solutions: SolutionItem[] = [
     description: "Events and experiences",
     href: "/listing-experiences",
     icon: IconFour,
-  },
-  {
-    name : "Flights" ,
-    description: "Filght description",
-    href:"/",
-    icon: IconOne,
   },
 ];
 

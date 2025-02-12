@@ -10,13 +10,13 @@ import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import ClearDataButton from "../ClearDataButton";
 import ButtonSubmit from "../ButtonSubmit";
 
-export interface RentalCarDatesRangeInputProps {
+export interface TransportationDatesRangeInputProps {
   className?: string;
   fieldClassName?: string;
   hasButtonSubmit?: boolean;
 }
 
-const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
+const TransportationDatesRangeInput: FC<TransportationDatesRangeInputProps> = ({
   className = "",
   fieldClassName = "[ nc-hero-field-padding ]",
   hasButtonSubmit = true,
@@ -24,8 +24,6 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   const [startDate, setStartDate] = useState<Date | null>(
     new Date("2023/03/01")
   );
-
-  setStartDate(null);
 
   const [endDate, setEndDate] = useState<Date | null>(new Date("2023/03/16"));
 
@@ -134,4 +132,4 @@ const RentalCarDatesRangeInput: FC<RentalCarDatesRangeInputProps> = ({
   );
 };
 
-export default RentalCarDatesRangeInput;
+export default TransportationDatesRangeInput;

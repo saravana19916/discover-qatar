@@ -7,12 +7,12 @@ import DatePickerCustomHeaderTwoMonth from "@/components/DatePickerCustomHeaderT
 import DatePickerCustomDay from "@/components/DatePickerCustomDay";
 import ClearDataButton from "../ClearDataButton";
 
-export interface ExperiencesDateSingleInputProps {
+export interface AccommodationDateSingleInputProps {
   className?: string;
   fieldClassName?: string;
 }
 
-const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
+const AccommodationDateSingleInput: FC<AccommodationDateSingleInputProps> = ({
   className = "",
   fieldClassName = "[ nc-hero-field-padding--small ]",
 }) => {
@@ -111,4 +111,4 @@ const ExperiencesDateSingleInput: FC<ExperiencesDateSingleInputProps> = ({
   );
 };
 
-export default ExperiencesDateSingleInput;
+export default AccommodationDateSingleInput;

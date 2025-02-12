@@ -2,12 +2,11 @@
 
 import React, { FC, useEffect, useState } from "react";
 import { StaySearchFormFields } from "../type";
-import StaySearchForm from "./(stay-search-form)/StaySearchForm";
-import ExperiencesSearchForm from "./(experiences-search-form)/ExperiencesSearchForm";
-import RentalCarSearchForm from "./(car-search-form)/RentalCarSearchForm";
-import FlightSearchForm from "./(flight-search-form)/FlightSearchForm";
+import HotelsSearchForm from "./(hotels-search-form)/HotelsSearchForm";
+import AccommodationSearchForm from "./(accommodation-search-form)/AccommodationSearchForm";
+import TransportationSearchForm from "./(tranportation-search-form)/TransportationSearchForm";
 
-export type SearchTab = "Stays" | "Experiences" | "Cars" | "Flights";
+export type SearchTab = "Hotels" | "Accommodation" | "Transportation";
 
 export interface HeroSearchFormSmallProps {
   className?: string;
@@ -15,11 +14,11 @@ export interface HeroSearchFormSmallProps {
   onTabChange?: (tab: SearchTab) => void;
   defaultFieldFocus?: StaySearchFormFields;
 }
-const TABS: SearchTab[] = ["Stays", "Experiences", "Cars", "Flights"];
+const TABS: SearchTab[] = ["Hotels", "Accommodation", "Transportation"];
 
 const HeroSearchFormSmall: FC<HeroSearchFormSmallProps> = ({
   className = "",
-  defaultTab = "Stays",
+  defaultTab = "Hotels",
   onTabChange,
   defaultFieldFocus,
 }) => {
@@ -62,14 +61,12 @@ const HeroSearchFormSmall: FC<HeroSearchFormSmallProps> = ({
 
   const renderForm = () => {
     switch (tabActive) {
-      case "Stays":
-        return <StaySearchForm defaultFieldFocus={defaultFieldFocus} />;
-      case "Experiences":
-        return <ExperiencesSearchForm />;
-      case "Cars":
-        return <RentalCarSearchForm />;
-      case "Flights":
-        return <FlightSearchForm />;
+      case "Hotels":
+        return <HotelsSearchForm defaultFieldFocus={defaultFieldFocus} />;
+      case "Accommodation":
+        return <AccommodationSearchForm />;
+      case "Transportation":
+        return <TransportationSearchForm />;
 
       default:
         return null;

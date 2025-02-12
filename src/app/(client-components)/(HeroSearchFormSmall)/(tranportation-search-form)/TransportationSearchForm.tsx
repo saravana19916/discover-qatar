@@ -2,11 +2,11 @@
 
 import React, { FC, useState } from "react";
 import LocationInput from "../LocationInput";
-import RentalCarDatesRangeInput from "./RentalCarDatesRangeInput";
+import TransportationDatesRangeInput from "./TransportationCarDatesRangeInput";
 
-export interface RentalCarSearchFormProps {}
+export interface TransportationSearchFormProps {}
 
-const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({}) => {
+const TransportationSearchForm: FC<TransportationSearchFormProps> = ({}) => {
   const [dropOffLocationType, setDropOffLocationType] = useState<
     "same" | "different"
   >("different");
@@ -60,7 +60,7 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({}) => {
             </>
           )}
           <div className="self-center border-r border-slate-200 dark:border-slate-700 h-8"></div>
-          <RentalCarDatesRangeInput className="flex-1" />
+          <TransportationDatesRangeInput className="flex-1" />
         </div>
       </form>
     );
@@ -69,4 +69,4 @@ const RentalCarSearchForm: FC<RentalCarSearchFormProps> = ({}) => {
   return renderForm();
 };
 
-export default RentalCarSearchForm;
+export default TransportationSearchForm;

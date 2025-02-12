@@ -1,14 +1,14 @@
 import React, { FC } from "react";
 import LocationInput from "../LocationInput";
 import GuestsInput from "../GuestsInput";
-import StayDatesRangeInput from "./StayDatesRangeInput";
+import StayDatesRangeInput from "./HotelsDatesRangeInput";
 import { StaySearchFormFields } from "../../type";
 
-export interface StaySearchFormProps {
+export interface HotelsSearchFormProps {
   defaultFieldFocus?: StaySearchFormFields;
 }
 
-const StaySearchForm: FC<StaySearchFormProps> = ({ defaultFieldFocus }) => {
+const HotelsSearchForm: FC<HotelsSearchFormProps> = ({ defaultFieldFocus }) => {
   const renderForm = () => {
     return (
       <form className="relative flex rounded-full border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800">
@@ -33,4 +33,4 @@ const StaySearchForm: FC<StaySearchFormProps> = ({ defaultFieldFocus }) => {
   return renderForm();
 };
 
-export default StaySearchForm;
+export default HotelsSearchForm;
