@@ -9,13 +9,15 @@ interface Props {
   className?: string;
   defaultValue?: string;
   headingText?: string;
+  placeholder?: string;
 }
 
 const LocationInput: FC<Props> = ({
   onChange = () => {},
   className = "",
-  defaultValue = "United States",
+  defaultValue = "Qatar",
   headingText = "Where to?",
+  placeholder = "Search destinations",
 }) => {
   const [value, setValue] = useState("");
   const containerRef = useRef(null);
@@ -72,7 +74,7 @@ const LocationInput: FC<Props> = ({
         <div className="relative mt-5">
           <input
             className={`block w-full bg-transparent border px-4 py-3 pr-12 border-neutral-900 dark:border-neutral-200 rounded-xl focus:ring-0 focus:outline-none text-base leading-none placeholder-neutral-500 dark:placeholder-neutral-300 truncate font-bold placeholder:truncate`}
-            placeholder={"Search destinations"}
+            placeholder={placeholder}
             value={value}
             onChange={(e) => setValue(e.currentTarget.value)}
             ref={inputRef}

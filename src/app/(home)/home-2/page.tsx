@@ -171,7 +171,7 @@ function PageHome2() {
           categoryCardType="card4"
           itemPerRow={4}
           heading="Suggestions for discovery"
-          subHeading="Popular places to stay that Chisfis recommends for you"
+          subHeading="Popular places to stay that Tixbox recommends for you"
         />
 
         <div className="relative py-16">
@@ -180,8 +180,8 @@ function PageHome2() {
         </div>
 
         <SectionSliderNewCategories
-          heading="Explore by types of stays"
-          subHeading="Explore houses based on 10 types of stays"
+          heading="Explore by types of Hotels"
+          subHeading="Explore houses based on 10 types of Hotels"
           categoryCardType="card5"
           itemPerRow={5}
         />

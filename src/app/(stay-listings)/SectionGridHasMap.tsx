@@ -74,11 +74,11 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
                 label="Search as I move the map"
               />
             </div>
-            {/* <GoogleMapReact
+             <GoogleMapReact
               defaultZoom={12}
               defaultCenter={DEMO_STAYS[0].map}
               bootstrapURLKeys={{
-                key: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
+                key: "AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0",
               }}
               yesIWantToUseGoogleMapApiInternals
             >
@@ -91,7 +91,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
                   listing={item}
                 />
               ))}
-            </GoogleMapReact> */}
+            </GoogleMapReact> 
           </div>
         </div>
       </div>

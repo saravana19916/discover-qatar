@@ -1,11 +1,11 @@
 {
-  "name": "chisfis-nextjs",
+  "name": "discover-qatar",
   "version": "0.2.2",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "PORT=4000 next dev",
+    "build": "PORT=4000 next build",
+    "start": "PORT=4000 next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -42,5 +42,9 @@
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.2"
+  },
+  "resolutions": {
+      "@types/react": "18.2.7",
+      "@types/react-dom": "18.2.7"
   }
 }

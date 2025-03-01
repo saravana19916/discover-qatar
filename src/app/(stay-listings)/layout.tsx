@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
       {/* SECTION HERO */}
       <div className="container pt-10 pb-24 lg:pt-16 lg:pb-28">
-        <SectionHeroArchivePage currentPage="Stays" currentTab="Stays" />
+        <SectionHeroArchivePage currentPage="Hotels" currentTab="Hotels" propertyType="hotels" />
       </div>
 
       {children}
@@ -23,8 +23,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div className="relative py-16">
           <BackgroundSection />
           <SectionSliderNewCategories
-            heading="Explore by types of stays"
-            subHeading="Explore houses based on 10 types of stays"
+            heading="Explore by types of hotels"
+            subHeading="Explore houses based on 10 types of hotels"
             categoryCardType="card5"
             itemPerRow={5}
             sliderStyle="style2"

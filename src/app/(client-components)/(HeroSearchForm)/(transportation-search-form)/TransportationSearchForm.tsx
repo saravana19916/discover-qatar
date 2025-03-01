@@ -42,19 +42,19 @@ const TransportationSearchForm: FC<TransportationSearchFormProps> = ({}) => {
 
   return (
     <form className="w-full relative mt-8 rounded-[40px] xl:rounded-[49px] rounded-t-2xl xl:rounded-t-3xl shadow-xl dark:shadow-2xl bg-white dark:bg-neutral-800">
-      {renderRadioBtn()}
+      {/*{renderRadioBtn()}*/}
       <div className={`relative flex flex-row`}>
         <LocationInput
-          placeHolder="City or Airport"
-          desc="Pick up location"
+          placeHolder="Destination"
+          desc=""
           className="flex-1"
         />
         {isDdropOffdifferent && (
           <>
             <div className="self-center border-r border-slate-200 dark:border-slate-700 h-8"></div>
             <LocationInput
-              placeHolder="City or Airport"
-              desc="Drop off location"
+              placeHolder="Departure Port"
+              desc=""
               className="flex-1"
               divHideVerticalLineClass="-inset-x-0.5"
             />

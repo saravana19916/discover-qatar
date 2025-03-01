@@ -9,6 +9,7 @@ import { useTimeoutFn } from "react-use";
 import StaySearchForm from "./(stay-search-form)/StaySearchForm";
 import CarsSearchForm from "./(car-search-form)/CarsSearchForm";
 import FlightSearchForm from "./(flight-search-form)/FlightSearchForm";
+import RealestateSearchForm from "./(real-estate-search-form)/RealestateSearchForm";
 
 const HeroSearchForm2Mobile = () => {
   const [showModal, setShowModal] = useState(false);
@@ -88,7 +89,31 @@ const HeroSearchForm2Mobile = () => {
                       </div>
 
                       <Tab.List className="pt-12 flex w-full justify-center font-semibold text-sm sm:text-base text-neutral-500 dark:text-neutral-400 space-x-6 sm:space-x-8">
-                        {["Stay", "Experiences", "Cars", "Flights"].map(
+                        {["Hotel", "Events and Experiences"].map(
+                          (item, index) => (
+                            <Tab key={index} as={Fragment}>
+                              {({ selected }) => (
+                                <div className="relative focus:outline-none focus-visible:ring-0 outline-none select-none">
+                                  <div
+                                    className={`${
+                                      selected
+                                        ? "text-black dark:text-white"
+                                        : ""
+                                    }  `}
+                                  >
+                                    {item}
+                                  </div>
+                                  {selected && (
+                                    <span className="absolute inset-x-0 top-full border-b-2 border-black dark:border-white"></span>
+                                  )}
+                                </div>
+                              )}
+                            </Tab>
+                          )
+                        )}
+                      </Tab.List>
+                      <Tab.List className="pt-6 flex w-full justify-center font-semibold text-sm sm:text-base text-neutral-500 dark:text-neutral-400 space-x-6 sm:space-x-8">
+                        {["Cruises", "Flights"].map(
                           (item, index) => (
                             <Tab key={index} as={Fragment}>
                               {({ selected }) => (
@@ -120,7 +145,7 @@ const HeroSearchForm2Mobile = () => {
                           </Tab.Panel>
                           <Tab.Panel>
                             <div className="transition-opacity animate-[myblur_0.4s_ease-in-out]">
-                              <StaySearchForm />
+                              <RealestateSearchForm />
                             </div>
                           </Tab.Panel>
                           <Tab.Panel>

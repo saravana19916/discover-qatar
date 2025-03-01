@@ -49,13 +49,13 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
       <div className="listingSection__wrap !space-y-6">
         {/* 1 */}
         <div className="flex justify-between items-center">
-          <Badge name="Wooden house" />
+          <Badge name="Luxury Hotel" />
           <LikeSaveBtns />
         </div>
 
         {/* 2 */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-          Beach House in Collingwood
+          Raffles Doha Hotel
         </h2>
 
         {/* 3 */}
@@ -64,7 +64,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
           <span>·</span>
           <span>
             <i className="las la-map-marker-alt"></i>
-            <span className="ml-1"> Tokyo, Jappan</span>
+            <span className="ml-1"> Doha, Qatar</span>
           </span>
         </div>
 
@@ -93,19 +93,19 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
           <div className="flex items-center space-x-3">
             <i className=" las la-bed text-2xl"></i>
             <span className=" ">
-              6 <span className="hidden sm:inline-block">beds</span>
-            </span>
-          </div>
-          <div className="flex items-center space-x-3">
-            <i className=" las la-bath text-2xl"></i>
-            <span className=" ">
-              3 <span className="hidden sm:inline-block">baths</span>
+              2 <span className="hidden sm:inline-block">bedrooms</span>
             </span>
           </div>
           <div className="flex items-center space-x-3">
             <i className=" las la-door-open text-2xl"></i>
             <span className=" ">
-              2 <span className="hidden sm:inline-block">bedrooms</span>
+              4 <span className="hidden sm:inline-block">beds</span>
+            </span>
+          </div>
+          <div className="flex items-center space-x-3">
+            <i className=" las la-bath text-2xl"></i>
+            <span className=" ">
+              3 <span className="hidden sm:inline-block">bathrooms</span>
             </span>
           </div>
         </div>
@@ -116,26 +116,23 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
   const renderSection2 = () => {
     return (
       <div className="listingSection__wrap">
-        <h2 className="text-2xl font-semibold">Stay information</h2>
+        <h2 className="text-2xl font-semibold">Hotel Information</h2>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
         <div className="text-neutral-6000 dark:text-neutral-300">
           <span>
-            Providing lake views, The Symphony 9 Tam Coc in Ninh Binh provides
-            accommodation, an outdoor swimming pool, a bar, a shared lounge, a
-            garden and barbecue facilities. Complimentary WiFi is provided.
+            Raffles is located within the striking Katara Towers, inspired by the crossed swords of Qatar. This modern-day masterpiece is the symbol of a new dawn in Doha.
           </span>
           <br />
           <br />
           <span>
-            There is a private bathroom with bidet in all units, along with a
-            hairdryer and free toiletries.
+            Embark on your bespoke journey of discovery in one of our highly personalised suites, where innovative luxury is brought to life in the most dazzling of ways.
           </span>
-          <br /> <br />
+          {/*<br /> <br />
           <span>
             The Symphony 9 Tam Coc offers a terrace. Both a bicycle rental
             service and a car rental service are available at the accommodation,
             while cycling can be enjoyed nearby.
-          </span>
+          </span>*/}
         </div>
       </div>
     );
@@ -261,25 +258,21 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
           <div className="text-sm sm:text-base text-neutral-6000 dark:text-neutral-300 -mb-4">
             <div className="p-4 bg-neutral-100 dark:bg-neutral-800 flex justify-between items-center space-x-4 rounded-lg">
               <span>Monday - Thursday</span>
-              <span>$199</span>
-            </div>
-            <div className="p-4  flex justify-between items-center space-x-4 rounded-lg">
-              <span>Monday - Thursday</span>
-              <span>$199</span>
-            </div>
-            <div className="p-4 bg-neutral-100 dark:bg-neutral-800 flex justify-between items-center space-x-4 rounded-lg">
-              <span>Friday - Sunday</span>
-              <span>$219</span>
+              <span>$455</span>
             </div>
             <div className="p-4 flex justify-between items-center space-x-4 rounded-lg">
+              <span>Friday - Sunday</span>
+              <span>$455</span>
+            </div>
+            <div className="p-4 bg-neutral-100 dark:bg-neutral-800 flex justify-between items-center space-x-4 rounded-lg">
               <span>Rent by month</span>
               <span>-8.34 %</span>
             </div>
-            <div className="p-4 bg-neutral-100 dark:bg-neutral-800 flex justify-between items-center space-x-4 rounded-lg">
+            <div className="p-4 flex justify-between items-center space-x-4 rounded-lg">
               <span>Minimum number of nights</span>
               <span>1 night</span>
             </div>
-            <div className="p-4 flex justify-between items-center space-x-4 rounded-lg">
+            <div className="p-4 bg-neutral-100 dark:bg-neutral-800 flex justify-between items-center space-x-4 rounded-lg">
               <span>Max number of nights</span>
               <span>90 nights</span>
             </div>
@@ -435,7 +428,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
         <div>
           <h2 className="text-2xl font-semibold">Location</h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
-            San Diego, CA, United States of America (SAN-San Diego Intl.)
+            Marina District Lusail City, Doha, Qatar (SAN-San Diego Intl.)
           </span>
         </div>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700" />
@@ -449,7 +442,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY&q=Eiffel+Tower,Paris+France"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0&q=Raffles+Doha+Hotel,Doha+Qatar"
             ></iframe>
           </div>
         </div>
@@ -517,7 +510,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
         {/* PRICE */}
         <div className="flex justify-between">
           <span className="text-3xl font-semibold">
-            $119
+            $455
             <span className="ml-1 text-base font-normal text-neutral-500 dark:text-neutral-400">
               /night
             </span>
@@ -535,8 +528,8 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
         {/* SUM */}
         <div className="flex flex-col space-y-4">
           <div className="flex justify-between text-neutral-6000 dark:text-neutral-300">
-            <span>$119 x 3 night</span>
-            <span>$357</span>
+            <span>$455 x 3 night</span>
+            <span>$1365</span>
           </div>
           <div className="flex justify-between text-neutral-6000 dark:text-neutral-300">
             <span>Service charge</span>
@@ -545,7 +538,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
           <div className="border-b border-neutral-200 dark:border-neutral-700"></div>
           <div className="flex justify-between font-semibold">
             <span>Total</span>
-            <span>$199</span>
+            <span>$1365</span>
           </div>
         </div>
 

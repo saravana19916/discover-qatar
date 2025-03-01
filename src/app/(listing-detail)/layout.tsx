@@ -10,6 +10,7 @@ import MobileFooterSticky from "./(components)/MobileFooterSticky";
 import { imageGallery as listingStayImageGallery } from "./listing-stay-detail/constant";
 import { imageGallery as listingCarImageGallery } from "./listing-car-detail/constant";
 import { imageGallery as listingExperienceImageGallery } from "./listing-experiences-detail/constant";
+import { imageGallery as listingRealestateImageGallery } from "./listing-realestate-detail/constant";
 import { Route } from "next";
 
 const DetailtLayout = ({ children }: { children: ReactNode }) => {
@@ -34,6 +35,9 @@ const DetailtLayout = ({ children }: { children: ReactNode }) => {
     if (thisPathname?.includes("/listing-experiences-detail")) {
       return listingExperienceImageGallery;
     }
+    if (thisPathname?.includes("/listing-realestate-detail")) {
+      return listingRealestateImageGallery;
+    }
 
     return [];
   };
@@ -53,8 +57,8 @@ const DetailtLayout = ({ children }: { children: ReactNode }) => {
         <div className="relative py-16">
           <BackgroundSection />
           <SectionSliderNewCategories
-            heading="Explore by types of stays"
-            subHeading="Explore houses based on 10 types of stays"
+            heading="Explore by types of Hotels"
+            subHeading="Explore houses based on 10 types of Hotels"
             categoryCardType="card5"
             itemPerRow={5}
             sliderStyle="style2"

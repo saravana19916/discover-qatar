@@ -18,7 +18,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
-    name: "New Yourk",
+    name: "New York",
     taxonomy: "category",
     count: 188288,
     thumbnail:
@@ -54,11 +54,11 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "5",
     href: "/listing-stay-map",
-    name: "Tokyo",
+    name: "Doha",
     taxonomy: "category",
     count: 188288,
     thumbnail:
-      "https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+      "https://api.ticketshop.tixbox.com/hotels/doha.jpg",
   },
   {
     id: "6",
@@ -172,7 +172,7 @@ function PageHome() {
             categoryCardType="card4"
             itemPerRow={4}
             heading="Suggestions for discovery"
-            subHeading="Popular places to stay that Chisfis recommends for you"
+            subHeading="Popular places to stay that Tixbox recommends for you"
             sliderStyle="style2"
           />
         </div>
@@ -192,8 +192,8 @@ function PageHome() {
         </div>
 
         <SectionSliderNewCategories
-          heading="Explore by types of stays"
-          subHeading="Explore houses based on 10 types of stays"
+          heading="Explore by types of Hotels"
+          subHeading="Explore houses based on 10 types of Hotels"
           categoryCardType="card5"
           itemPerRow={5}
         />

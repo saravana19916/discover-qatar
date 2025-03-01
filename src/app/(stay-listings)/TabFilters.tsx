@@ -27,7 +27,7 @@ const typeOfPaces = [
   },
   {
     name: "Shared room",
-    description: "Stay in a shared space, like a common room",
+    description: "Hotel in a shared space, like a common room",
   },
 ];
 

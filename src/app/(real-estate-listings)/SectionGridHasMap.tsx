@@ -3,7 +3,7 @@
 import React, { FC, useState } from "react";
 import AnyReactComponent from "@/components/AnyReactComponent/AnyReactComponent";
 import GoogleMapReact from "google-map-react";
-import { DEMO_STAY_LISTINGS } from "@/data/listings";
+import { DEMO_REALESTATE_LISTINGS } from "@/data/listings";
 import ButtonClose from "@/shared/ButtonClose";
 import Checkbox from "@/shared/Checkbox";
 import Pagination from "@/shared/Pagination";
@@ -11,7 +11,7 @@ import TabFilters from "./TabFilters";
 import Heading2 from "@/shared/Heading2";
 import PropertyCardH from "@/components/PropertyCardH";
 
-const DEMO_EXPERIENCES = DEMO_STAY_LISTINGS.filter((_, i) => i < 12);
+const DEMO_REALESTATES = DEMO_REALESTATE_LISTINGS.filter((_, i) => i < 12);
 
 export interface SectionGridHasMapProps {}
 
@@ -25,7 +25,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
         {/* CARDSSSS */}
         <div className="min-h-screen w-full xl:w-[780px] 2xl:w-[880px] flex-shrink-0 xl:px-8 ">
           <Heading2
-            heading="Experiences in Tokyo"
+            heading="Events and Experiences in Doha"
             subHeading={
               <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
                 233 experiences
@@ -39,7 +39,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             <TabFilters />
           </div>
           <div className="grid grid-cols-1 gap-8">
-            {DEMO_EXPERIENCES.map((item) => (
+            {DEMO_REALESTATES.map((item) => (
               <div
                 key={item.id}
                 onMouseEnter={() => setCurrentHoverID((_) => item.id)}
@@ -85,15 +85,15 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             </div>
             {/* BELLOW IS MY GOOGLE API KEY -- PLEASE DELETE AND TYPE YOUR API KEY */}
 
-            {/* <GoogleMapReact
+             <GoogleMapReact
               bootstrapURLKeys={{
-                key: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
+                key: "AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0",
               }}
               yesIWantToUseGoogleMapApiInternals
               defaultZoom={12}
-              defaultCenter={DEMO_EXPERIENCES[0].map}
+              defaultCenter={DEMO_REALESTATES[0].map}
             >
-              {DEMO_EXPERIENCES.map((item) => (
+              {DEMO_REALESTATES.map((item) => (
                 <AnyReactComponent
                   isSelected={currentHoverID === item.id}
                   key={item.id}
@@ -102,7 +102,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
                   experiences={item}
                 />
               ))}
-            </GoogleMapReact> */}
+            </GoogleMapReact> 
           </div>
         </div>
       </div>

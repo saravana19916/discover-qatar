@@ -8,7 +8,7 @@ export interface Statistic {
 }
 
 const FOUNDER_DEMO: Statistic[] = [
-  {
+  /*{
     id: "1",
     heading: "10 million",
     subHeading:
@@ -24,7 +24,7 @@ const FOUNDER_DEMO: Statistic[] = [
     heading: "220+",
     subHeading:
       "Countries and regions have our presence (as of Sept. 30, 2021)",
-  },
+  },*/
 ];
 
 export interface SectionStatisticProps {
@@ -35,10 +35,9 @@ const SectionStatistic: FC<SectionStatisticProps> = ({ className = "" }) => {
   return (
     <div className={`nc-SectionStatistic relative ${className}`}>
       <Heading
-        desc=" We’re impartial and independent, and every day we create distinctive,
-          world-class programmes and content"
+        desc=" Qatar – pronounced ‘kuh-TAR’ – is located on the Arabian Peninsula, jutting into the Arabian Gulf. The first evidence of human settlement dates to the 6th millennium BCE. For centuries, Qatar was largely populated by Bedouin tribes and a few fishing villages, shaped by the rule of Arab tribes, Portuguese explorers, Ottoman leaders and the esteemed al-Thani family, whose leadership has significantly influenced the nation's heritage. Qatar’s destiny changed when oil was first discovered in the Dukhan Field in 1940, transforming its economy from pearling, fishing and trade to one of the wealthiest nations in the world."
       >
-        🚀 Fast Facts
+        🚀 The rich history of Qatar
       </Heading>
       <div className="grid md:grid-cols-2 gap-6 lg:grid-cols-3 xl:gap-8">
         {FOUNDER_DEMO.map((item) => (

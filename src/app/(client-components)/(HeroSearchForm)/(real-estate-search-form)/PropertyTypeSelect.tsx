@@ -24,7 +24,7 @@ const defaultPropertyType: ClassOfProperties[] = [
   },
   {
     name: "Maison House",
-    description: "Stay in a shared space, like a common room",
+    description: "Hotel in a shared space, like a common room",
     checked: false,
   },
 ];

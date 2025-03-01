@@ -9,7 +9,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="nc-ListingRealEstateMapPage">
       <div className="container pb-24 lg:pb-28">
-        <SectionHero2ArchivePage />
+        <SectionHero2ArchivePage propertyType="accommodations" />
       </div>
 
       {children}
@@ -19,8 +19,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
         <div className="relative py-16">
           <BackgroundSection />
           <SectionSliderNewCategories
-            heading="Explore by types of stays"
-            subHeading="Explore houses based on 10 types of stays"
+            heading="Explore by types of Accommodations"
+            subHeading="Explore based on 10 types of Accommodations"
             categoryCardType="card5"
             itemPerRow={5}
             sliderStyle="style2"

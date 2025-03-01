@@ -42,7 +42,8 @@ const CarsSearchForm = () => {
           </button>
         ) : (
           <LocationInput
-            headingText="Pick up?"
+            headingText="Location?"
+            placeholder="Search Ports"
             defaultValue={locationInputPickUp}
             onChange={(value) => {
               setLocationInputPickUp(value);

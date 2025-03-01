@@ -32,7 +32,7 @@ const PayPage: FC<PayPageProps> = () => {
             <div className="pt-5  sm:pb-5 sm:px-5 space-y-3">
               <div>
                 <span className="text-sm text-neutral-500 dark:text-neutral-400 line-clamp-1">
-                  Hotel room in Tokyo, Jappan
+                  Hotel room in Doha, Qatar
                 </span>
                 <span className="text-base sm:text-lg font-medium mt-1 block">
                   The Lounge & Bar
@@ -124,7 +124,7 @@ const PayPage: FC<PayPageProps> = () => {
           </div>
         </div>
         <div>
-          <ButtonPrimary href="/">Explore more stays</ButtonPrimary>
+          <ButtonPrimary href="/">Explore more hotels</ButtonPrimary>
         </div>
       </div>
     );

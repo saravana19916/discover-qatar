@@ -9,6 +9,12 @@ import { headerCurrency } from "./CurrencyDropdown";
 
 export const headerLanguage = [
   {
+    id: "Vietnamese",
+    name: "Arabic",
+    description: "Qatar",
+    href: "##",
+  },
+  {
     id: "English",
     name: "English",
     description: "United State",
@@ -16,35 +22,28 @@ export const headerLanguage = [
     active: true,
   },
   {
-    id: "Vietnamese",
-    name: "Vietnamese",
-    description: "Vietnamese",
+    id: "Francais",
+    name: "German",
+    description: "Germany",
     href: "##",
   },
   {
     id: "Francais",
-    name: "Francais",
-    description: "Belgique",
+    name: "Hindi",
+    description: "India",
     href: "##",
   },
+  
+ 
+  
   {
     id: "Francais",
-    name: "Francais",
-    description: "Canada",
+    name: "Chinese",
+    description: "China",
     href: "##",
   },
-  {
-    id: "Francais",
-    name: "Francais",
-    description: "Belgique",
-    href: "##",
-  },
-  {
-    id: "Francais",
-    name: "Francais",
-    description: "Canada",
-    href: "##",
-  },
+  
+  
 ];
 
 interface LangDropdownProps {

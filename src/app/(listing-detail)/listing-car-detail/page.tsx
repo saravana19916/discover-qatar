@@ -12,7 +12,7 @@ import ButtonPrimary from "@/shared/ButtonPrimary";
 import ButtonSecondary from "@/shared/ButtonSecondary";
 import Input from "@/shared/Input";
 import Image from "next/image";
-import { Amenities_demos, includes_demo, PHOTOS } from "./constant";
+import { Amenities_demos, includes_demo, PHOTOS, Cruise_detal } from "./constant";
 import LikeSaveBtns from "@/components/LikeSaveBtns";
 import { usePathname, useRouter } from "next/navigation";
 import SectionDateRange from "../SectionDateRange";
@@ -36,13 +36,13 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
       <div className="listingSection__wrap !space-y-6">
         {/* 1 */}
         <div className="flex justify-between items-center">
-          <Badge color="pink" name="BMW car" />
+          <Badge color="pink" name="Norwegian Sky Ship" />
           <LikeSaveBtns />
         </div>
 
         {/* 2 */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-          BMW 3 Series Sedan
+          Asia - Middle East
         </h2>
 
         {/* 3 */}
@@ -51,7 +51,7 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
           <span>·</span>
           <span>
             <i className="las la-map-marker-alt"></i>
-            <span className="ml-1"> Tokyo, Jappan</span>
+            <span className="ml-1"> Doha, Qatar</span>
           </span>
         </div>
 
@@ -72,16 +72,16 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
         {/* 6 */}
         <div className="flex items-center justify-between xl:justify-start space-x-8 xl:space-x-12 text-sm text-neutral-700 dark:text-neutral-300">
           <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 text-center sm:text-left sm:space-x-3 ">
-            <i className="las la-user-friends text-2xl"></i>
-            <span className="">4 seats</span>
+            <i className="las la-map-marker text-2xl"></i>
+            <span className=""> Doha, Dammam, Manama</span>
           </div>
           <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 text-center sm:text-left sm:space-x-3 ">
-            <i className="las la-dharmachakra text-2xl"></i>
-            <span className=""> Auto gearbox</span>
+            <i className="las la-ship text-2xl"></i>
+            <span className=""> Norwegian Sky Ship</span>
           </div>
           <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 text-center sm:text-left sm:space-x-3 ">
-            <i className="las la-suitcase text-2xl"></i>
-            <span className=""> 2 bags</span>
+            <i className="las la-moon text-2xl"></i>
+            <span className=""> 7 nights</span>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
       <div className="listingSection__wrap">
         <div>
           <h2 className="text-2xl font-semibold">
-            Vehicle parameters & utilities{" "}
+            Cruise parameters & utilities{" "}
           </h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
             Questions are at the heart of making things great.
@@ -104,10 +104,10 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
         {/* 6 */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-6 gap-x-10 text-sm text-neutral-700 dark:text-neutral-300 ">
           {/* TIEN ICH 1 */}
-          {Amenities_demos.map((item, index) => (
+          {Cruise_detal.map((item, index) => (
             <div key={index} className="flex items-center space-x-4 ">
               <div className="w-10 flex-shrink-0">
-                <Image src={item.icon} alt="" />
+                <i className={item.icon}></i>
               </div>
               <span>{item.name}</span>
             </div>
@@ -120,19 +120,14 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
   const renderSection2 = () => {
     return (
       <div className="listingSection__wrap">
-        <h2 className="text-2xl font-semibold">Car descriptions</h2>
+        <h2 className="text-2xl font-semibold">Cruise descriptions</h2>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
         <div className="text-neutral-6000 dark:text-neutral-300">
           <p>
-            Until the all-new TUCSON hits the dealer showrooms you can check it
-            out in our Showroom Walkaround video. Watch the video and join our
-            product specialist as he gives you an up-close look of our latest
-            SUV
+            Structurally, there are some oddities on the ship, including Deck 6A, which houses a handful of cabins but isn't accessible by elevator. Likewise, Sky's cabins are tight but adequate for two. But the ship's structure also means it has a gorgeous atrium that spans from Deck 5 all the way to Deck 12. It also has the cool, bright Spinnaker Lounge, featuring floor-to-ceiling windows and an adjacent sun deck, covered in teak, that has tremendous views from the bow of the ship.
             <br />
             <br />
-            Questions are at the heart of making things great. Watch our
-            celebrity-filled TV ad and you’ll see that when we say “everything,”
-            we mean everything.
+            All free restaurants onboard Norwegian Sky fall under NCL's Freestyle Cruising concept, which gives passengers open seating and flexible, extended hours. Passengers can elect to eat at the same table with the same waiters each night by informing the maitre d' once onboard. Reservations are required at the ship's specialty restaurants, which have less capacity than the main dining rooms or buffet options onboard and therefore fill quickly. Passengers have a number of options for breakfast, lunch and dinner, and we were especially happy to discover the ship's Pool BBQ, which begins after lunch closes in other venues -- a boon for passengers returning later from shore excursions.
           </p>
         </div>
       </div>
@@ -168,7 +163,7 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
     return (
       <div className="listingSection__wrap">
         {/* HEADING */}
-        <h2 className="text-2xl font-semibold">Car Owner</h2>
+        <h2 className="text-2xl font-semibold">Cruise Owner</h2>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
 
         {/* host */}
@@ -310,7 +305,7 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
         <div>
           <h2 className="text-2xl font-semibold">Location</h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
-            San Diego, CA, United States of America (SAN-San Diego Intl.)
+            Marina District Lusail City, Doha, Qatar (SAN-San Diego Intl.)
           </span>
         </div>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700" />
@@ -324,7 +319,7 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY&q=Eiffel+Tower,Paris+France"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0&q=Raffles+Doha+Hotel,Doha+Qatar"
             ></iframe>
           </div>
         </div>
@@ -417,18 +412,42 @@ const ListingCarDetailPage: FC<ListingCarDetailPageProps> = ({}) => {
           <div className="ml-4 space-y-14 text-sm">
             <div className="flex flex-col space-y-2">
               <span className=" text-neutral-500 dark:text-neutral-400">
-                Monday, August 12 · 10:00
+                Apr 12, 2025 · 10:00
               </span>
               <span className=" font-semibold">
-                Saint Petersburg City Center
+                Doha
               </span>
             </div>
             <div className="flex flex-col space-y-2">
               <span className=" text-neutral-500 dark:text-neutral-400">
-                Monday, August 16 · 10:00
+                Apr 13, 2025 · 11:00
               </span>
               <span className=" font-semibold">
-                Saint Petersburg City Center
+                Dammam
+              </span>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <span className=" text-neutral-500 dark:text-neutral-400">
+                Apr 14, 2025 · 8:00
+              </span>
+              <span className=" font-semibold">
+                Manama
+              </span>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <span className=" text-neutral-500 dark:text-neutral-400">
+                Apr 15, 2025 · 22:00
+              </span>
+              <span className=" font-semibold">
+                Sir Bani Yas Island
+              </span>
+            </div>
+            <div className="flex flex-col space-y-2">
+              <span className=" text-neutral-500 dark:text-neutral-400">
+                Apr 16, 2025 · 7:00
+              </span>
+              <span className=" font-semibold">
+                Abu Dhabi
               </span>
             </div>
           </div>

@@ -43,7 +43,7 @@ const ListingExperiencesDetailPage: FC<
 
         {/* 2 */}
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold">
-          Trang An Boat Tour & Mua Cave
+          Daydream Music Festival
         </h2>
 
         {/* 3 */}
@@ -52,7 +52,7 @@ const ListingExperiencesDetailPage: FC<
           <span>·</span>
           <span>
             <i className="las la-map-marker-alt"></i>
-            <span className="ml-1"> Tokyo, Jappan</span>
+            <span className="ml-1"> Doha, Qatar</span>
           </span>
         </div>
 
@@ -82,7 +82,7 @@ const ListingExperiencesDetailPage: FC<
           </div>
           <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 text-center sm:text-left sm:space-x-3 ">
             <i className="las la-language text-2xl"></i>
-            <span className="">English, VietNames</span>
+            <span className="">English, Arabic</span>
           </div>
         </div>
       </div>
@@ -96,46 +96,8 @@ const ListingExperiencesDetailPage: FC<
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700"></div>
         <div className="text-neutral-6000 dark:text-neutral-300">
           <p>
-            TRANG AN BOAT TOUR & MUA CAVE CLIMBING TOUR FROM HANOI
+            At Daydream Festival, visitors enter a wonderful dream and wander in a world where time has no meaning. Dreamers will be guided beyond their imagination and through places they’ve never seen before. boundaries disappear and together with thousands of Daydreamers they can escape reality and create breath-taking memories, which will never be forgotten. 
             <br />
-            <br />
-            07:30 – 08:00 – Our guide will meet you at your hotel/stay and start
-            a 120km comfortable Limousine bus journey through the verdant
-            landscape. Stopover for a rest on the way.
-            <br />
-            <br />
-            BAI DINH PAGODA EXPLORER.
-            <br />
-            <br />
-            10:30 – Arrive Bai Dinh pagoda complex, get on electric cars to
-            visit massive architecture.
-            <br />
-            <br />
-            12:15 – Enjoy the buffet lunch at our restaurant, a great place to
-            savor the flavours of Vietnamese food.
-            <br />
-            <br />
-            TRANG AN TOUR ON BOAT.
-            <br />
-            <br />
-            13:30 – Visit Trang An Grottoes, get on a rowing boat traveling
-            along the river with scenic mountain and green fields landscape.
-            <br />
-            <br />
-            MUA CAVE HIKING. TAKE PICTURE
-            <br />
-            <br />
-            15:45 – Arrive at Mua Cave and start an amazing trek up to the top
-            of Ngoa Long mountain.
-            <br />
-            <br />
-            17:30 – 20:00 – Return to our Limousine bus and then come back to
-            Hanoi. Drop you off at your hotel/stay. Other things to note
-            <br />
-            <br />
-            It is one full day tour. Start from 07.30 AM and finish at 20.00. We
-            just put one hour and default departure time because we have many
-            other tours. IF you need any further details
           </p>
         </div>
       </div>
@@ -313,7 +275,7 @@ const ListingExperiencesDetailPage: FC<
         <div>
           <h2 className="text-2xl font-semibold">Location</h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
-            San Diego, CA, United States of America (SAN-San Diego Intl.)
+            Marina District Lusail City, Doha, Qatar (SAN-San Diego Intl.)
           </span>
         </div>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700" />
@@ -327,7 +289,7 @@ const ListingExperiencesDetailPage: FC<
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY&q=Eiffel+Tower,Paris+France"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0&q=Raffles+Doha+Hotel,Doha+Qatar"
             ></iframe>
           </div>
         </div>

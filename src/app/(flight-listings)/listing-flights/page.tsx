@@ -4,6 +4,7 @@ import SectionSliderNewCategories from "@/components/SectionSliderNewCategories"
 import SectionSubscribe2 from "@/components/SectionSubscribe2";
 import React, { FC } from "react";
 import SectionGridFilterCard from "../SectionGridFilterCard";
+import heroRightImage from "@/images/hero-right6.png";
 
 export interface ListingFlightsPageProps {}
 
@@ -15,6 +16,7 @@ const ListingFlightsPage: FC<ListingFlightsPageProps> = ({}) => {
       <div className="container relative">
         {/* SECTION HERO */}
         <SectionHeroArchivePage
+          rightImage={heroRightImage}
           currentPage="Flights"
           currentTab="Flights"
           listingType={
@@ -24,6 +26,7 @@ const ListingFlightsPage: FC<ListingFlightsPageProps> = ({}) => {
             </>
           }
           className="pt-10 pb-24 lg:pb-28 lg:pt-16 "
+          propertyType="flights"
         />
 
         {/* SECTION */}

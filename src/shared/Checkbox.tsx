@@ -20,7 +20,7 @@ const Checkbox: FC<CheckboxProps> = ({
   onChange,
 }) => {
   return (
-    <div className={`flex text-sm sm:text-base ${className}`}>
+    <div className={`flex text-sm ${className}`}>
       <input
         id={name}
         name={name}

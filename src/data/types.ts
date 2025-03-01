@@ -82,6 +82,7 @@ export interface StayDataType {
   bedrooms: number;
   bathrooms: number;
   saleOff?: string | null;
+  sponsored?: boolean | null;
   isAds: boolean | null;
   map: {
     lat: number;
@@ -132,7 +133,8 @@ export interface CarDataType {
   galleryImgs: (StaticImageData | string)[];
   price: string;
   listingCategory: TaxonomyType;
-  seats: number;
+  seats?: number | null;
+  nights?: number | null;
   gearshift: string;
   saleOff?: string | null;
   isAds: boolean | null;

@@ -22,7 +22,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
   return (
     <div className={`nc-SectionGridFilterCard ${className}`}>
       <Heading2
-        heading="Experiences in Tokyo"
+        heading="Events and Experiences in Doha"
         subHeading={
           <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
             233 experiences

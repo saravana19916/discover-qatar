@@ -28,58 +28,52 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
-    name: "Nature House",
+    name: "Luxury Hotels",
     taxonomy: "category",
     count: 17288,
-    thumbnail:
-      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/luxury-hotels.jpg",
   },
   {
     id: "2",
     href: "/listing-stay-map",
-    name: "Wooden house",
+    name: "Business Hotels",
     taxonomy: "category",
     count: 2118,
-    thumbnail:
-      "https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/business-hotels.jpg",
   },
   {
     id: "3",
     href: "/listing-stay-map",
-    name: "Houseboat",
+    name: "Boutique Hotels",
     taxonomy: "category",
     count: 36612,
-    thumbnail:
-      "https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/boutique-hotels.jpg",
   },
   {
     id: "4",
     href: "/listing-stay-map",
-    name: "Farm House",
+    name: "Resort & Beach Hotels",
     taxonomy: "category",
     count: 18188,
-    thumbnail:
-      "https://images.pexels.com/photos/248837/pexels-photo-248837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/resort-beach-hotels.jpg",
   },
   {
     id: "5",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "Economy",
     taxonomy: "category",
     count: 22288,
-    thumbnail:
-      "https://images.pexels.com/photos/3613236/pexels-photo-3613236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/economy-hotels.jpg",
   },
   {
     id: "6",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "Airport & Transit Hotels",
     taxonomy: "category",
     count: 188288,
-    thumbnail:
-      "https://images.pexels.com/photos/14534337/pexels-photo-14534337.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    thumbnail: "https://api.ticketshop.tixbox.com/hotels/airport-transit-hotels.jpg",
   },
-  {
+  /*{
     id: "7",
     href: "/listing-stay-map",
     name: "Wooden house",
@@ -96,7 +90,7 @@ const DEMO_CATS: TaxonomyType[] = [
     count: 515,
     thumbnail:
       "https://images.pexels.com/photos/9039238/pexels-photo-9039238.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-  },
+  },*/
 ];
 
 const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({

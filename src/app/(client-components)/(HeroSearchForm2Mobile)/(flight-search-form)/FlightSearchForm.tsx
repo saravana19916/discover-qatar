@@ -50,7 +50,8 @@ const FlightSearchForm = () => {
           </button>
         ) : (
           <LocationInput
-            headingText="Pick up?"
+            headingText="Flying from?"
+            placeholder="Search Airport"
             defaultValue={locationInputPickUp}
             onChange={(value) => {
               setLocationInputPickUp(value);

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { DEMO_STAY_LISTINGS } from "@/data/listings";
+import { DEMO_REALESTATE_LISTINGS } from "@/data/listings";
 import { StayDataType } from "@/data/types";
 import Pagination from "@/shared/Pagination";
 import TabFilters from "./TabFilters";
@@ -11,7 +11,7 @@ export interface SectionGridFilterCardProps {
   data?: StayDataType[];
 }
 
-const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 8);
+const DEMO_DATA: StayDataType[] = DEMO_REALESTATE_LISTINGS.filter((_, i) => i < 8);
 
 const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
   className = "",
@@ -20,10 +20,10 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
   return (
     <div className={`nc-SectionGridFilterCard ${className}`}>
       <Heading2
-        heading="Property in Tokyo"
+        heading="Accommodations in Doha"
         subHeading={
           <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
-            233 Property
+            233 Accommodations
             <span className="mx-2">·</span>
             Aug 12 - 18
           </span>

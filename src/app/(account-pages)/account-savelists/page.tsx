@@ -13,7 +13,7 @@ import React, { Fragment, useState } from "react";
 import ButtonSecondary from "@/shared/ButtonSecondary";
 
 const AccountSavelists = () => {
-  let [categories] = useState(["Stays", "Experiences", "Transportation"]);
+  let [categories] = useState(["Hotels", "Events & Experiences", "Cruises"]);
 
   const renderSection1 = () => {
     return (

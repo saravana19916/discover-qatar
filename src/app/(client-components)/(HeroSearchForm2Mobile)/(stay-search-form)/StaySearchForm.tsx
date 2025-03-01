@@ -51,6 +51,8 @@ const StaySearchForm = () => {
           </button>
         ) : (
           <LocationInput
+            headingText="Location?"
+            placeholder="Search"
             defaultValue={locationInputTo}
             onChange={(value) => {
               setLocationInputTo(value);

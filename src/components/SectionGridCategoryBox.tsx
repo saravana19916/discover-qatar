@@ -15,7 +15,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
-    name: "New Yourk",
+    name: "New York",
     taxonomy: "category",
     count: 1882,
     thumbnail:
@@ -51,7 +51,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "5",
     href: "/listing-stay-map",
-    name: "Tokyo",
+    name: "Doha",
     taxonomy: "category",
     count: 323,
     thumbnail:
@@ -69,7 +69,7 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "7",
     href: "/listing-stay-map",
-    name: "New Yourk",
+    name: "New York",
     taxonomy: "category",
     count: 1775,
     thumbnail:

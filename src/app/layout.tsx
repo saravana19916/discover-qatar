@@ -15,7 +15,7 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 export const metadata = {
-  title: "Discover Qatar",
+  title: "Discover Qatar-Booking Platform",
   description: "Your travel companion for Qatar",
   icons: {
     icon: "/favicon-32x32.png",

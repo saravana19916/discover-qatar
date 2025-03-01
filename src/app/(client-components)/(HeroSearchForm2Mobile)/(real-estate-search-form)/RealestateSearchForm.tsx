@@ -34,7 +34,7 @@ const RealestateSearchForm = () => {
     },
     {
       name: "Maison House",
-      description: "Stay in a shared space, like a common room",
+      description: "Hotel in a shared space, like a common room",
       checked: false,
     },
   ]);
@@ -59,7 +59,8 @@ const RealestateSearchForm = () => {
           </button>
         ) : (
           <LocationInput
-            headingText="Where to find?"
+            headingText="Location?"
+            placeholder="Search"
             defaultValue={locationInputTo}
             onChange={(value) => {
               setLocationInputTo(value);

@@ -25,7 +25,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
         {/* CARDSSSS */}
         <div className="min-h-screen w-full xl:w-[780px] 2xl:w-[880px] flex-shrink-0 xl:px-8 ">
           <Heading2
-            heading="Cars in Tokyo"
+            heading="Cruises in Doha"
             subHeading={
               <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
                 233 cars
@@ -84,9 +84,9 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
             </div>
             {/* BELLOW IS MY GOOGLE API KEY -- PLEASE DELETE AND TYPE YOUR API KEY */}
 
-            {/* <GoogleMapReact
+            <GoogleMapReact
               bootstrapURLKeys={{
-                key: "AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY",
+                key: "AIzaSyCBaWit5uUQFlaJ_0vUEfonAb_BI_7JC-0",
               }}
               yesIWantToUseGoogleMapApiInternals
               defaultZoom={12}
@@ -101,7 +101,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = () => {
                   car={item}
                 />
               ))}
-            </GoogleMapReact> */}
+            </GoogleMapReact> 
           </div>
         </div>
       </div>

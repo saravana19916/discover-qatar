@@ -155,7 +155,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
           ${showHeroSearch ? "duration-75" : ""} 
           ${
             showHeroSearch
-              ? currentTab === "Transportation"
+              ? currentTab === "Cruises"
                 ? "scale-y-[4.4]"
                 : "scale-y-[3.4]"
               : ""

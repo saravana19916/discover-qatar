@@ -30,6 +30,7 @@ const StayCard2: FC<StayCard2Props> = ({
     href,
     like,
     saleOff,
+    sponsored,
     isAds,
     price,
     reviewStart,
@@ -49,6 +50,7 @@ const StayCard2: FC<StayCard2Props> = ({
         />
         <BtnLikeIcon isLiked={like} className="absolute right-3 top-3 z-[1]" />
         {saleOff && <SaleOffBadge className="absolute left-3 top-3" />}
+        {sponsored && <SaleOffBadge desc="Sponsored" bgClass="bg-green-700" className="absolute left-3 top-3" />}
       </div>
     );
   };

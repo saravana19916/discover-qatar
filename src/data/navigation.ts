@@ -158,7 +158,7 @@ const templatesChildrenMenus: NavItemType[] = [
   //
   {
     id: ncNanoId(),
-    href: "/subscription",
+    href: "/",
     name: "Subscription",
   },
 ];
@@ -230,12 +230,12 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       {
         id: ncNanoId(),
         href: "/listing-car",
-        name: "Transportation listings",
+        name: "Cruises listings",
         type: "dropdown",
         children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
+          { id: ncNanoId(), href: "/listing-car", name: "Cruises" },
+          { id: ncNanoId(), href: "/listing-car-map", name: "Cruise (map)" },
+          { id: ncNanoId(), href: "/listing-car-detail", name: "Cruise Detail" },
         ],
       },
 
@@ -324,9 +324,9 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
     href: "/listing-car",
     name: "Listing pages",
     children: [
-      { id: ncNanoId(), href: "/listing-car", name: "Transportation listings" },
-      { id: ncNanoId(), href: "/listing-car-map", name: "Transportation listings (map)" },
-      { id: ncNanoId(), href: "/listing-car-detail", name: "Transportation detail" },
+      { id: ncNanoId(), href: "/listing-car", name: "Cruise listings" },
+      { id: ncNanoId(), href: "/listing-car-map", name: "Cruise listings (map)" },
+      { id: ncNanoId(), href: "/listing-car-detail", name: "Cruise detail" },
 
       //
       {

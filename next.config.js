@@ -1,12 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   experimental: {
     appDir: true,
     typedRoutes: true,
   },
   images: {
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.ticketshop.tixbox.com",
+        port: "",
+        pathname: "/**",
+      },
       {
         protocol: "https",
         hostname: "images.pexels.com",

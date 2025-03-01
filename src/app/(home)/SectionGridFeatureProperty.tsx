@@ -21,9 +21,9 @@ const SectionGridFeatureProperty: FC<SectionGridFeaturePropertyProps> = ({
   stayListings = DEMO_DATA,
   gridClass = "",
   heading = "Featured places to stay",
-  subHeading = "Popular places to stay that Chisfis recommends for you",
+  subHeading = "Popular places to stay that Tixbox recommends for you",
   headingIsCenter,
-  tabs = ["New York", "Tokyo", "Paris", "London"],
+  tabs = ["Doha", "New York", "Paris", "London"],
 }) => {
   const renderCard = (stay: StayDataType, index: number) => {
     return <PropertyCardH key={index} className="h-full" data={stay} />;
@@ -32,7 +32,7 @@ const SectionGridFeatureProperty: FC<SectionGridFeaturePropertyProps> = ({
   return (
     <div className="nc-SectionGridFeatureProperty relative">
       <HeaderFilter
-        tabActive={"New York"}
+        tabActive={"Doha"}
         subHeading={subHeading}
         tabs={tabs}
         heading={heading}
@@ -43,7 +43,7 @@ const SectionGridFeatureProperty: FC<SectionGridFeaturePropertyProps> = ({
         {stayListings.map(renderCard)}
       </div>
       <div className="flex mt-16 justify-center items-center">
-        <ButtonPrimary loading>Show me more</ButtonPrimary>
+        <ButtonPrimary>Show me more</ButtonPrimary>
       </div>
     </div>
   );

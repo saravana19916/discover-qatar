@@ -24,9 +24,9 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   stayListings = DEMO_DATA,
   gridClass = "",
   heading = "Featured places to stay",
-  subHeading = "Popular places to stay that Chisfis recommends for you",
+  subHeading = "Popular places to stay that Tixbox recommends for you",
   headingIsCenter,
-  tabs = ["New York", "Tokyo", "Paris", "London"],
+  tabs = ["Doha", "New York", "Paris", "London"],
   cardType = "card2",
 }) => {
   const renderCard = (stay: StayDataType) => {
@@ -49,7 +49,7 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   return (
     <div className="nc-SectionGridFeaturePlaces relative">
       <HeaderFilter
-        tabActive={"New York"}
+        tabActive={"Doha"}
         subHeading={subHeading}
         tabs={tabs}
         heading={heading}
@@ -60,7 +60,7 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
         {stayListings.map((stay) => renderCard(stay))}
       </div>
       <div className="flex mt-16 justify-center items-center">
-        <ButtonPrimary loading>Show me more</ButtonPrimary>
+        <ButtonPrimary>Show me more</ButtonPrimary>
       </div>
     </div>
   );
